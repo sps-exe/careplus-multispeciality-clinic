@@ -63,9 +63,3 @@ public/          # static images and illustrations
 - The appointment form is currently presentational for the trial build.
 - Future integrations can connect the form to email, WhatsApp, or Google Sheets without introducing a database.
 
-## Business Details
-- **Business:** CarePlus Multispeciality Clinic
-- **Location:** Swaroop Nagar, Kanpur, Uttar Pradesh
-- **Phone:** +91 98765 43210
-- **Email:** contact@careplusclinic.in
-
