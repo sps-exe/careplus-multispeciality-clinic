@@ -1,3 +1,9 @@
+if (typeof globalThis !== 'undefined' && globalThis.localStorage && typeof globalThis.localStorage.getItem !== 'function') {
+  try {
+    delete globalThis.localStorage;
+  } catch (e) {}
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {

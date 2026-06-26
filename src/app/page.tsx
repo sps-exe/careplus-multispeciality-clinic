@@ -8,7 +8,7 @@ export default function HomePage() {
     <main className="mx-auto max-w-[1440px] px-4 pb-16 pt-6 sm:px-6 lg:px-8">
       <section className="rounded-[36px] bg-white p-4 shadow-[0_24px_80px_rgba(15,23,42,0.08)] sm:p-6 lg:p-8">
         <div className="grid gap-6 lg:grid-cols-[1.25fr_0.75fr]">
-          <div className="relative min-h-[680px] overflow-hidden rounded-[32px]">
+          <div className="relative min-h-[500px] sm:min-h-[680px] overflow-hidden rounded-[32px]">
             <Image
               src={clinicData.heroImage}
               alt="Modern clinic reception"
@@ -24,7 +24,7 @@ export default function HomePage() {
                   <span className="h-2 w-2 rounded-full bg-emerald-400" />
                   4.9 Average Rating • Same-day appointments available
                 </div>
-                <h1 className="max-w-2xl font-[family-name:var(--font-poppins)] text-5xl font-semibold leading-[1.02] text-white sm:text-6xl lg:text-7xl">
+                <h1 className="max-w-2xl font-[family-name:var(--font-poppins)] text-4xl font-semibold leading-[1.1] text-white sm:text-6xl lg:text-7xl">
                   Quality Healthcare for Your Entire Family
                 </h1>
                 <p className="mt-5 max-w-xl text-base leading-7 text-slate-100 sm:text-lg">
@@ -33,20 +33,20 @@ export default function HomePage() {
                 <div className="mt-8 flex flex-wrap gap-3">
                   <Link
                     href="/appointments"
-                    className="rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-blue-600/30 transition hover:scale-[1.01]"
+                    className="flex w-full sm:w-auto justify-center rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 px-6 py-3 text-center text-sm font-medium text-white shadow-lg shadow-blue-600/30 transition hover:scale-[1.01]"
                   >
                     Book Appointment
                   </Link>
                   <Link
                     href="/services"
-                    className="rounded-full border border-white/35 bg-white/10 px-6 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/15"
+                    className="flex w-full sm:w-auto justify-center rounded-full border border-white/35 bg-white/10 px-6 py-3 text-center text-sm font-medium text-white backdrop-blur transition hover:bg-white/15"
                   >
                     Explore Services
                   </Link>
                 </div>
               </div>
             </div>
-            <div className="absolute right-5 top-5 w-[320px] rounded-[28px] bg-white/92 p-4 shadow-xl backdrop-blur">
+            <div className="hidden lg:block absolute right-5 top-5 w-[320px] rounded-[28px] bg-white/92 p-4 shadow-xl backdrop-blur">
               <div className="text-xs font-medium uppercase tracking-[0.24em] text-slate-500">Clinic Support</div>
               <div className="mt-3 flex items-center gap-3">
                 <div className="flex -space-x-2">
@@ -107,10 +107,10 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <div className="mt-6">
+              <div className="mt-6 flex">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
+                  className="flex w-full sm:w-auto justify-center items-center rounded-full bg-slate-900 px-5 py-3 text-center text-sm font-medium text-white transition hover:bg-slate-800"
                 >
                   Contact Us
                 </Link>
@@ -222,10 +222,10 @@ export default function HomePage() {
               For a no-database trial version, we keep the booking flow simple: clear contact details, a form UI, and quick next-step actions.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Link href="/appointments" className="rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-900">
+              <Link href="/appointments" className="flex w-full sm:w-auto justify-center rounded-full bg-white px-5 py-3 text-center text-sm font-medium text-slate-900">
                 Book Appointment
               </Link>
-              <Link href={`tel:${clinicData.phoneRaw}`} className="rounded-full border border-white/20 px-5 py-3 text-sm font-medium text-white">
+              <Link href={`tel:${clinicData.phoneRaw}`} className="flex w-full sm:w-auto justify-center rounded-full border border-white/20 px-5 py-3 text-center text-sm font-medium text-white">
                 Call Now
               </Link>
             </div>
